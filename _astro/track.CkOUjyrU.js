@@ -1,0 +1,1 @@
+function e(e,t={}){let n=window;n.__analyticsConsent&&Array.isArray(n.dataLayer)&&n.dataLayer.push({event:e,...t})}function t(){document.addEventListener(`click`,t=>{let n=t.target?.closest(`[data-track]`);n?.dataset.track&&e(n.dataset.track,{path:location.pathname})})}export{e as n,t};
